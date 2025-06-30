@@ -13,7 +13,7 @@ interface ApiResponse {
 }
 
 // Backend API endpoint
-const API_BASE_URL = 'http://localhost:3001';
+const API_BASE_URL = 'https://wheel-a-meal-production.up.railway.app';
 
 export const fetchNearbyRestaurants = async (zipcode: string): Promise<Restaurant[]> => {
   try {
