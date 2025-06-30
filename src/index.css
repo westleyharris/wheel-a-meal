@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen;
+  }
+}
+
+@layer components {
+  .wheel-container {
+    @apply relative w-80 h-80 mx-auto;
+  }
+  
+  .wheel {
+    @apply w-full h-full rounded-full border-4 border-gray-300 relative overflow-hidden transition-transform duration-3000 ease-out;
+  }
+  
+  .wheel-segment {
+    @apply absolute w-1/2 h-1/2 origin-bottom-right flex items-center justify-center text-white font-bold text-sm transform;
+  }
+  
+  .wheel-pointer {
+    @apply absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-b-16 border-l-transparent border-r-transparent border-b-red-500 z-10;
+  }
+  
+  .spin-button {
+    @apply bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200;
+  }
+  
+  .zipcode-input {
+    @apply w-full max-w-md px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-500 focus:outline-none text-center text-lg;
+  }
+}
