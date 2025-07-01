@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32">
+  <defs>
+    <linearGradient id="pinwheelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#4ECDC4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#45B7D1;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#96CEB4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFEAA7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Center circle -->
+  <circle cx="50" cy="50" r="8" fill="#333"/>
+  
+  <!-- Pinwheel blades -->
+  <g transform="rotate(0, 50, 50)">
+    <path d="M50 50 L50 15 L65 35 Z" fill="url(#pinwheelGradient)"/>
+  </g>
+  <g transform="rotate(90, 50, 50)">
+    <path d="M50 50 L50 15 L65 35 Z" fill="url(#pinwheelGradient)"/>
+  </g>
+  <g transform="rotate(180, 50, 50)">
+    <path d="M50 50 L50 15 L65 35 Z" fill="url(#pinwheelGradient)"/>
+  </g>
+  <g transform="rotate(270, 50, 50)">
+    <path d="M50 50 L50 15 L65 35 Z" fill="url(#pinwheelGradient)"/>
+  </g>
+</svg> 
